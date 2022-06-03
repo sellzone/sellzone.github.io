@@ -1,4 +1,4 @@
 # Index 
-MyGeekTalent -> <a href="/MyGeekTalent">link</a>
-
-ChatBot -> <a href="/chat/bot">link</a>
+MyGeekTalent -> <a target="_blank" href="/MyGeekTalent">link</a>
+<br/>
+ChatBot -> <a target="_blank" href="/chat/bot">link</a>
