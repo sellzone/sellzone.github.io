@@ -32,6 +32,14 @@
 	</script>
   <script type="module" crossorigin src="./assets/index.b856a01e.js"></script>
   <link rel="stylesheet" href="./assets/index.6c31457e.css">
+
+  <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+  <style>
+	.plyr {
+		border-radius: 8px;
+	}
+  </style>
 </head>
 <body>
 <div id="app">
@@ -65,14 +73,19 @@
         <h4 class="front tagline"><span class="text-gradient"><span class="blue">MyGeek</span><span class="red">Talent</span></span> se met à jour pour être à la hauteur
             de
             vos projets.</h4>
-        <div class="countdown-wrapper">
+			<div style="max-width: 800px">
+				<video id="player" crossorigin  playsinline controls data-poster="./assets/sacha.png">
+					<source src="https://res.cloudinary.com/sellzonecdn/video/upload/v1655364295/mygeektalent.mp4" type="video/mp4" size="1080" />
+				</video>
+			</div>
+        <!--div class="countdown-wrapper">
             <div class="countdown" data-date="13-6-2022" data-time="12:00">
                 <div class="box day"><span class="num"></span><span class="word"></span></div>
                 <div class="box hour"><span class="num"></span><span class="word"></span></div>
                 <div class="box min"><span class="num"></span><span class="word"></span></div>
                 <div class="box sec"><span class="num"></span><span class="word"></span></div>
             </div>
-        </div>
+        </div-->
         <div class="front content">
             <blockquote class="quote-wrapper">
                 <div class="quote quote--en active">"No matter your age or your personal journey, whether art is your
@@ -97,6 +110,10 @@
         </div>
     </footer>
 </div>
+
+<script>
+	const player = new Plyr('#player');
+</script>
 
 </body>
 </html>
