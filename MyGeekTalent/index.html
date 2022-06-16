@@ -30,12 +30,46 @@
 
 	gtag('config', 'UA-215330342-1');
 	</script>
-  <script type="module" crossorigin src="./assets/index.b856a01e.js"></script>
-  <link rel="stylesheet" href="./assets/index.6c31457e.css">
+	<script type="module">
+		const M = function() {
+			const o = document.createElement("link").relList;
+			if (o && o.supports && o.supports("modulepreload")) return;
+			for (const t of document.querySelectorAll('link[rel="modulepreload"]')) i(t);
+			new MutationObserver(t => {
+				for (const n of t)
+					if (n.type === "childList")
+						for (const s of n.addedNodes) s.tagName === "LINK" && s.rel === "modulepreload" && i(s)
+			}).observe(document, {
+				childList: !0,
+				subtree: !0
+			});
 
-  <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
-  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
-  <style>
+			function l(t) {
+				const n = {};
+				return t.integrity && (n.integrity = t.integrity), t.referrerpolicy && (n.referrerPolicy = t.referrerpolicy), t.crossorigin === "use-credentials" ? n.credentials = "include" : t.crossorigin === "anonymous" ? n.credentials = "omit" : n.credentials = "same-origin", n
+			}
+
+			function i(t) {
+				if (t.ep) return;
+				t.ep = !0;
+				const n = l(t);
+				fetch(t.href, n)
+			}
+		};
+		M();
+		document.addEventListener("DOMContentLoaded", () => {
+			document.getElementById("open-modal").addEventListener("click", () => {
+				document.body.classList.add("modal-open")
+			}), document.getElementById("close-modal").addEventListener("click", () => {
+				document.body.classList.remove("modal-open")
+			})
+		});
+	</script>
+	<link rel="stylesheet" href="./assets/index.6c31457e.css">
+
+	<script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+	<style>
 	.plyr {
 		border-radius: 8px;
 	}
