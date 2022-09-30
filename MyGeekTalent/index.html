@@ -31,39 +31,7 @@
 	gtag('config', 'UA-215330342-1');
 	</script>
 	<script type="module">
-		const M = function() {
-			const o = document.createElement("link").relList;
-			if (o && o.supports && o.supports("modulepreload")) return;
-			for (const t of document.querySelectorAll('link[rel="modulepreload"]')) i(t);
-			new MutationObserver(t => {
-				for (const n of t)
-					if (n.type === "childList")
-						for (const s of n.addedNodes) s.tagName === "LINK" && s.rel === "modulepreload" && i(s)
-			}).observe(document, {
-				childList: !0,
-				subtree: !0
-			});
-
-			function l(t) {
-				const n = {};
-				return t.integrity && (n.integrity = t.integrity), t.referrerpolicy && (n.referrerPolicy = t.referrerpolicy), t.crossorigin === "use-credentials" ? n.credentials = "include" : t.crossorigin === "anonymous" ? n.credentials = "omit" : n.credentials = "same-origin", n
-			}
-
-			function i(t) {
-				if (t.ep) return;
-				t.ep = !0;
-				const n = l(t);
-				fetch(t.href, n)
-			}
-		};
-		M();
-		document.addEventListener("DOMContentLoaded", () => {
-			document.getElementById("open-modal").addEventListener("click", () => {
-				document.body.classList.add("modal-open")
-			}), document.getElementById("close-modal").addEventListener("click", () => {
-				document.body.classList.remove("modal-open")
-			})
-		});
+		const M=function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))i(t);new MutationObserver(t=>{for(const n of t)if(n.type==="childList")for(const s of n.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&i(s)}).observe(document,{childList:!0,subtree:!0});function l(t){const n={};return t.integrity&&(n.integrity=t.integrity),t.referrerpolicy&&(n.referrerPolicy=t.referrerpolicy),t.crossorigin==="use-credentials"?n.credentials="include":t.crossorigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function i(t){if(t.ep)return;t.ep=!0;const n=l(t);fetch(t.href,n)}};M();const r=e=>document.querySelector(e),w=function(e){const o=r(e.target).getAttribute("data-date").split("-"),l=parseInt(o[0]),i=parseInt(o[1]),t=parseInt(o[2]);let n=r(e.target).getAttribute("data-time"),s,c;n!=null&&(n=n.split(":"),s=parseInt(n[0]),c=parseInt(n[1])),new Date().getFullYear()%4;let a=new Date;a.getDate(),a.getMonth()+1,a.getFullYear(),a.getHours(),a.getMinutes();const p=new Date(t,i-1,l,s,c,0,0).getTime();r(e.target+" .day .word").innerHTML=e.dayWord,r(e.target+" .hour .word").innerHTML=e.hourWord,r(e.target+" .min .word").innerHTML=e.minWord,r(e.target+" .sec .word").innerHTML=e.secWord;const m=()=>{const y=new Date().getTime(),d=p-y,h=Math.floor(d/(1e3*60*60*24)),L=Math.floor(d%(1e3*60*60*24)/(1e3*60*60)),f=Math.floor(d%(1e3*60*60)/(1e3*60)),g=Math.floor(d%(1e3*60)/1e3);requestAnimationFrame(m),r(e.target+" .day .num").innerHTML=u(h),r(e.target+" .hour .num").innerHTML=u(L),r(e.target+" .min .num").innerHTML=u(f),r(e.target+" .sec .num").innerHTML=u(g),d<0&&(r(".countdown").innerHTML="EXPIRED")};m()},u=e=>e<10&&e>=0?"0"+e:e;new w({target:".countdown",dayWord:" days",hourWord:" hours",minWord:" mins",secWord:" seconds"});document.addEventListener("DOMContentLoaded",()=>{document.getElementById("open-modal").addEventListener("click",()=>{document.body.classList.add("modal-open")}),document.getElementById("close-modal").addEventListener("click",()=>{document.body.classList.remove("modal-open")})});
 	</script>
 	<link rel="stylesheet" href="./assets/index.6c31457e.css">
 
@@ -94,7 +62,7 @@
         </div>
         <img class="aside-img" src="./assets/line.692abe3f.png" alt="lines background">
         <div class="front logo-wrapper">
-            <img class="logo" src="./assets/logo.0a0a24d5.png" alt="MyGeekTalent">
+            <img class="logo" src="./assets/logo.png" alt="MyGeekTalent">
             <div class="socialMedia-wrapper">
                 <a href="https://www.facebook.com/My-Geek-Talent-103228628811671/" target="_blank" class="media"><i
                         class="fa-brands fa-facebook"></i></a>
@@ -112,14 +80,14 @@
 					<source src="https://res.cloudinary.com/sellzonecdn/video/upload/v1655364295/mygeektalent.mp4" type="video/mp4" size="1080" />
 				</video>
 			</div>
-        <!--div class="countdown-wrapper">
-            <div class="countdown" data-date="13-6-2022" data-time="12:00">
+        <div class="countdown-wrapper">
+            <div class="countdown" data-date="4-10-2022" data-time="12:00">
                 <div class="box day"><span class="num"></span><span class="word"></span></div>
                 <div class="box hour"><span class="num"></span><span class="word"></span></div>
                 <div class="box min"><span class="num"></span><span class="word"></span></div>
                 <div class="box sec"><span class="num"></span><span class="word"></span></div>
-            </div>
-        </div-->
+			</div>
+        </div>
         <div class="front content">
             <blockquote class="quote-wrapper">
                 <div class="quote quote--en active">"No matter your age or your personal journey, whether art is your
