@@ -1,0 +1,78 @@
+//contact style
+%rounded{
+    border-radius: 5px;
+}
+.contact-form-wrapper{
+    padding-bottom: 60px;
+    .contact-intro{
+        color: $black;
+        padding: 40px;
+    }
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        color: $black;
+        min-height: 50px;
+    }
+}
+.contact-form{
+    border: 1px solid $color-gris-2;
+    box-shadow: 0 3px 16px #0000003D;
+    padding: 20px; 
+    padding-top: 25px;
+    @extend %rounded;
+    margin: auto;
+    .condition-message{
+        font-size: 18px;
+    }
+    .required{
+        color: $color-red;
+        
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    label{
+        display: block; 
+    }
+    input[type=text],select,textarea{
+        width: 100%;
+        border: 1px solid $color-gris-2;
+        // @extend %rounded;
+        height: 40px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    textarea{
+        height: 250px;
+    }
+    .submit-bt-wrapper{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .contact-condition{
+        input[type=checkbox]{
+            margin-right: 5px;
+        }
+    }
+}
+.contact-bt{
+    border: 2px solid $white;
+    border-radius: 5px;
+    color: $white;
+    text-transform: uppercase;
+    background: $dark-background-default;
+    &:hover{
+        background: $white;
+        color: $dark-background-default;
+    }
+}
+.contact-bt-wrapper-solutions{
+    .contact-bt{
+        background: $black;
+        &:hover{
+            color: $black;
+            background: $white;
+        }
+    }
+}

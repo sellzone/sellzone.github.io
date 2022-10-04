@@ -1,0 +1,14 @@
+//pagination
+.nav_pagination{
+    a{
+        color: $white;
+        font-size: 18px; 
+        &:hover{
+            color: $white;
+            font-weight: bold;
+        }
+    }
+    span{
+        margin-right: 10px;
+    }
+}

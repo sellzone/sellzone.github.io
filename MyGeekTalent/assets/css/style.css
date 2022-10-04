@@ -1,0 +1,127 @@
+/*============================
+
+  
+=============================
+
+    CSS INDEX
+    ===================
+    
+/*=============================
+ Theme default CSS
+=============================*/
+
+body {
+  font-family: 'JetBrains Mono';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #68666C;
+  font-style: normal; }
+
+img,
+.img {
+  max-width: 100%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; }
+
+.f-left {
+  float: left; }
+
+.f-right {
+  float: right; }
+
+a,
+button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; }
+
+a:focus,
+.btn:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none; }
+
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  color: #0054FF;
+  text-decoration: none; }
+
+a,
+button {
+  color: #0054FF;
+  outline: medium none;
+  text-decoration: none; }
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+  outline: 0; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.capitalize {
+  text-transform: capitalize; }
+.txt-red, .txt-red a, .red-color {
+    color: #a22742 !important;
+}
+.white {
+  background-color: #FFFFFF !important;
+}
+.little-border {
+  padding: 0px 25px;
+  text-align: justify;
+}
+.milli {
+    font-size: 12px;
+    line-height: 1.8333333333;
+}
+.push--top, .social_media_connectors {
+  margin-top: 22px !important;
+}
+.box-shadows {
+  box-shadow: 10px 10px 50px grey;
+}
+
+.txt-red:hover {
+  text-decoration: underline; 
+}
+
+.projt {
+  width: 100%;
+  margin: 50px auto;
+}
+.projt .cercle {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 0.5px solid rgb(211, 211, 211);
+  flex-wrap: wrap;
+  color: #a22742;
+  transform: rotate(-10deg);
+  transition: 0.7s;
+
+}
+.projt .cercle:hover {
+  background-color: #a22742;
+  color: #fff;
+}
+.projt .cercle strong {
+  margin-top: -10px;
+  font-size: 1.4em;
+ 
+}

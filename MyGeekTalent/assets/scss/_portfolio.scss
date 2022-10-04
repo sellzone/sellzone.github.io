@@ -1,0 +1,20 @@
+
+/*----------------------------------------*/
+/*   Portfolio CSS
+/*----------------------------------------*/
+
+.fitness-gallery-area{
+    padding-top: 145px;
+    padding-bottom: 110px;
+    position: relative;
+}
+
+.fitness-item{
+    position: relative;
+    margin-bottom: 85px;
+    transition: all .3s ease-in-out;
+    & img{
+        width: 100%;
+    }
+}
+

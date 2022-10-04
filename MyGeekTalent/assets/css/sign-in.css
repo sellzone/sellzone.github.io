@@ -1,0 +1,74 @@
+.icone{
+    margin: 55px 0px !important;
+}
+
+.sign-in{
+    padding: 20px 20px;
+    margin: 20px;
+    font-size: 1.2rem;
+}
+
+.inputStyle{
+    display: block;
+    width: 95% !important;
+    padding: 6px 20px !important;
+    margin: auto;
+    box-sizing: border-box !important;
+    border: 1px solid rgb(29, 28, 28) !important;
+    border-radius: 4px !important;
+}
+
+.bg-grey{
+    background-color: #efefef;
+}
+
+.center-checkBox{
+    display: block;
+    margin: auto;
+    margin-bottom: -8px;
+}
+
+.button-connecter{
+    border-radius: 34px !important;
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+    background: white !important;
+    color: #2a3d68 !important;
+}
+
+.button-connecter:hover{
+    border-radius: 34px !important;
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+    background: #2a3d68 !important;
+    color: white !important;
+}
+
+.btn-sign-up:hover{
+    background-color: #1a237e!important;
+    color:#fff;
+  }
+  
+  .btn-sign-up {
+    border:#1a237e 1px solid;
+    color:#1a237e;
+    border-radius:25px;
+    background: white;
+  }
+
+.btn-center {
+    display: block;
+    margin: auto;
+}
+
+  .div-img-sign-up {
+    margin-top: 90px;
+  }
+
+ .large{
+    font-size: 6rem;
+ } 
+
+.cgu-margin{
+    margin-top: 100px;
+}

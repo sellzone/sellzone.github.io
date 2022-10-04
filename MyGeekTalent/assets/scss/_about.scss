@@ -1,0 +1,222 @@
+//about us page 
+.about-main-wrap{
+    .section-footer{
+        .footer-middle{
+            background: $dark-background-default;
+            color: $white;
+        }
+        .footer-middle a{
+            color: $white;
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}
+%has-min-width{
+    min-width: 80%;
+}
+.about-menu-section{
+    @extend %has-min-width; 
+    border-bottom: 1px solid $color-gris-2;
+    .about-us-menu {
+        margin: auto;
+        min-height: 52px;
+        padding-top: 20px;
+        padding-bottom: 11px;
+        text-align: center;
+        li{
+            display: inline-block;
+            list-style-type: none;
+            margin-right: 22px;
+        }
+        li a{
+            color: $black;
+            text-transform: uppercase;
+        }
+        li a.selected-menu{
+            font-weight: bold;
+            border-bottom: 5px solid $color-red;
+        }
+    }
+}
+.solutions-illustration{
+    background-position:center;
+    @include mq.mq($until:tablet){
+        background-size: contain;
+    }
+    .power-project-background{
+        background : transparent;
+    }
+}
+.about-section-solutions{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $black;
+    h2{
+        text-align: center;
+        margin: 50px 0;
+        color: $white;
+    }
+    .title-solutions-page{
+        background-color: $black;
+        padding: 50px; 
+        p{
+            color: $white;
+            text-align: justify;
+            padding-bottom: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+    }
+    .left-column-about{
+        background: transparent;
+        padding: 50px; 
+        text-align: justify;
+        padding-top: 50px; 
+        color: $white;
+        a{
+            color: $white;
+        }
+    }
+    .right-column-about{
+        padding: 50px;
+        padding-top: 50px; 
+        padding-bottom: 190px;  
+        color: $white;
+        text-align: justify;
+        background: transparent;
+    }
+}
+.about-section{
+    @extend %has-min-width;  
+    background-size: cover;
+    background: $dark-background-default;
+    color: $white;
+    h2{
+        text-align: center;
+        margin: 50px 0;
+        color: $white;
+    }
+
+    .left-column-about{
+        padding: 50px;
+        background: $color-gris-1;
+        text-align: justify;
+        padding-top: 50px;
+        background: $dark-background-default;
+        color: $white;
+        a{
+            color: $white;
+        }
+    }
+    .right-column-about{
+        padding: 50px;
+        padding-top: 50px; 
+        padding-bottom: 190px; 
+        background: $dark-background-default;
+        color: $white;
+        text-align: justify;
+    }
+}
+.about-video-section{
+    @extend %has-min-width;
+}
+.big-about-banner-hero{
+    height: 455px;
+    .banner_heading{
+        text-transform: uppercase;
+    }
+    .banner-description {
+        p{
+            text-shadow: 2px 2px 5px #0000002D;
+            text-transform: uppercase;
+        }
+    }
+}
+.about-banner-hero{
+    height: 455px; 
+    .banner-description {
+        p{
+            text-shadow: 2px 2px 5px #0000002D;
+            text-transform: uppercase;
+        }
+    }
+    .banner_heading{
+        text-transform: uppercase;
+    }
+}
+%blue-effect-banner{
+    // background: rgba(42, 61, 104, 0.65);
+    // background: $dark-background-default-rgba;
+   
+    background: radial-gradient($dark-background-default-rgba,$dark-background-default);
+}
+.blue-effect-image{
+    @extend %blue-effect-banner;
+}
+.power-project-section{ 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    @extend %has-min-width;
+    color: $white;
+    text-align: center;
+    min-height: 600px;
+    .power-project-background{ 
+        background: $dark-background-default;
+        // @extend %blue-effect-banner;
+        // padding-top: 100px;
+        // padding:  100px 0; 
+    }
+    .center-block{
+        margin: auto; 
+        text-align: justify; 
+        padding-top: 55px;
+        padding-bottom: 50px;
+        @include mq.mq($until:tablet){
+            padding: 50px;
+        }
+        h2{
+            text-align: center;
+        }
+    }
+} 
+.red-line-separator-wrap{
+    position:relative;
+    a{
+        color: $white; 
+        
+    }
+    %red-line{
+        width: 2px;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        height: 80%;
+        min-height: 10px;  
+        background: $red-line-color;
+    }
+    .red-line-wrap-about{
+        @extend %red-line;
+        height: 88%;
+        @include mq.mq($until:desktop){
+            display: none;
+        }
+    }
+    .red-line-wrap{
+        @extend %red-line;
+        height: 90%;
+        @include mq.mq($until:desktop){
+            display: none;
+        }
+    }
+    
+}
+ 
+.idea-to-action-image-wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.idea-to-action{
+    min-height: 675px;
+}

@@ -1,0 +1,30 @@
+/*----------------------------------------*/
+/*   video CSS
+/*----------------------------------------*/
+
+.media-home-page {
+    width: 70%;
+    margin: 50px auto;
+
+}
+
+.responsive-video {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video_youtube iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.app-video{
+  width: 100%; 
+  display: block;
+  max-height: 600px;
+  background: $dark-background-default;
+}

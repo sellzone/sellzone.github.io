@@ -1,0 +1,219 @@
+/*----------------------------------------*/
+/*  Footer
+/*----------------------------------------*/
+
+.section-footer {
+    background-color: $dark-background-default;
+    padding-top: 30px;
+}
+.section-footer-solutions{
+    background-color: $black;
+    .platform-info, .white{
+        background: $black;
+        color: $white;
+        a{
+            color: $white;
+        }
+        a:hover{
+            color: $white;
+        }
+    }
+    .footer-subscribe-wrapper .footer_newsletter-btn{
+        background: transparent;
+    }
+}
+.footer-start-bt-wrap-solutions{
+    background: $black;
+    min-height: 150px;
+    text-align: center; 
+    padding-top: 50px;
+    // border-bottom: 1px solid $white;
+    .start-project-bt-wrap{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        .app-bt{
+            border-radius: 100px;
+        }
+        .light-bt:hover{
+            background: $white;
+            color: $dark-background-default;
+        }
+    }
+}
+.footer_main {
+    // background-color: $dark-background-default;
+    color: $white;
+    padding: 30px 0 10px 0;
+
+    .footer-heading {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+}
+
+
+.footer-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-logo {
+    text-align: center;
+
+    img {
+        width: 160px;
+    }
+}
+
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+
+    a {
+        margin: 0 10px;
+        font-size: 2em;
+        i{
+            color: $white;
+        }
+        color: $white;
+    }
+}
+
+.footer-nav-wrapper {
+
+    ul { 
+        padding-bottom: 30px; 
+        a {
+            color: $white;
+            &:hover{
+                    text-decoration: underline;
+            }
+        }
+        
+    }
+}
+
+
+.footer-subscribe-wrapper {
+    .footer_newsletter-btn {
+        border-radius: 25px;
+        background-color: $dark-background-default;
+        color: $white;
+        font-weight: 600;
+        height: 38px;
+        margin-bottom: 10px;
+        border: 1px solid $white;
+        line-height: 36px;
+        outline: 0;
+        padding: 0 2rem;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $white;
+            color: $dark-background-default;
+            border: 1px solid $white;
+        }
+    }
+
+    .input-field {
+        margin-bottom: 5px;
+
+
+        .input-subscribe {
+            background-color: #fff;
+            border: 1px solid #564242;
+            color: $heading-text-color;
+            padding: 0 4px;
+            width: 100%;
+        }
+    }
+
+    .checkbox_subscribe {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: flex-start;
+
+        input {
+            margin: 6px 4px 0 0;
+        }
+
+    }
+}
+
+.footer-middle {
+    padding: 30px;
+    color: $body-text-color;
+    background: $dark-background-default;
+    color: $white;
+    a{
+        color: $white;
+        &:hover{
+            color: $white;
+        }
+    }
+    .image-wrapper {
+        max-width: 120px;
+        margin-right: 1rem;
+        margin: 0 auto 20px;
+        
+    }
+}
+
+.footer-copyright {
+    // background-color: $dark-background-default;
+    color: $white;
+    padding: 22px;
+
+    p {
+        font-size: 12px; 
+        text-align: center;
+        margin-bottom: 0;
+
+    }
+  
+}
+.module-desc{
+    padding-top: 30px;
+    h4{
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    a{
+        color: $white;
+        &:hover{
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+    p{
+        text-transform: lowercase;
+        @include mq.mq($until:tablet){
+            text-align: center;
+        }
+        &::first-letter{
+            text-transform: uppercase;
+        }
+    }
+}
+.footer-start-bt-wrap{
+    min-height: 150px;
+    text-align: center;
+    background:  $dark-background-default;
+    padding-top: 50px;
+    // border-bottom: 1px solid $white;
+    .start-project-bt-wrap{
+        margin: 0;
+        padding: 0;
+        .light-bt:hover{
+            background: $white;
+            color: $dark-background-default;
+        }
+    }
+}

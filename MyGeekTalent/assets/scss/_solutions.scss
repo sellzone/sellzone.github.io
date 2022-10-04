@@ -1,0 +1,13 @@
+//solution and strategies
+.background-title-wrap{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top center;
+    @include mq.mq($until:large){
+        background-position: bottom left;
+    }
+
+    .title-solutions-effect{
+        background: rgba(0,0,0,0.3);
+    }
+}

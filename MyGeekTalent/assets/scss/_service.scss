@@ -1,0 +1,32 @@
+//page services 
+.communication-wrap{
+    min-height: 600px;
+    background-size:cover;
+    background-repeat:no-repeat;
+ 
+    .communication-text{
+        padding: 50px;
+        color: $white;
+        min-height: 600px;
+    }
+}
+.marketplace-wrap{
+    min-height: 400px;
+    padding: 50px;
+    color: $white;
+    background: $dark-background-default;
+    .left-column-about{
+        padding: 50px;
+    }
+    .right-column-about{
+        padding: 50px;
+    }
+}
+.service-banner{
+    #banner-hero{
+        background-size:contain;
+        @include mq.mq($until: large){
+            background-size: cover;
+        }
+    }
+}

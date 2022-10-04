@@ -1,0 +1,59 @@
+//rounded progress bar
+
+.circle-wrap {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background: $white;
+    border-radius: 100%;
+    border: 1px solid #cdcbd0;
+    z-index: 1; 
+    position: relative;
+    display: block;
+}
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: $dark-background-default;
+}
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+  
+.mask.full,
+.circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(var(--value)); //change this (360/100) * 75 = 270
+}
+.circle-wrap .inside-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: $color-inside-circle; 
+    line-height: 120px;
+    text-align: center;
+    margin-top: 14px;
+    margin-left: 14px;
+    color: $dark-background-default;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+}
+  
+@keyframes fill{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(var(--value)); //change this
+     
+    }
+}

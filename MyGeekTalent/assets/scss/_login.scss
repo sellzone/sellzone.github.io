@@ -1,0 +1,47 @@
+//sign up and sign in
+.signup-form{
+    padding: 25px;
+    box-shadow: 0 3px 16px #0000003D;
+    margin-bottom: 100px;
+    h4{
+        color: $dark-background-default;
+    }
+    .login-label {
+        label{
+            text-align: center;
+            color: red;
+            display:block;
+        }
+    }
+    label{
+        
+        padding-left: 10px;
+        .required{
+            color: $color-red;
+            margin-left: 10px;
+        }
+    }
+    .signup-bt{
+        color: $dark-background-default;
+        background-color: transparent;
+        border-color: $dark-background-default;
+        &:hover{
+            color: $white;
+            background-color: $dark-background-default;
+        }
+    }
+}
+.gaming-icon-wrap{
+     
+    text-align: center;
+    padding-top: 76px; 
+    margin-bottom: 10px;
+    .gaming-icon{
+        width: 76px;
+        height: 76px;
+        
+    }
+}
+.gaming-icon-login{
+    padding-top: 150px;
+}

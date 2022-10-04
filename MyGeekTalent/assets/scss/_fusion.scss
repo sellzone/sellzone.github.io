@@ -1,0 +1,100 @@
+/*----------------------------------------*/
+/*   Portfolio CSS
+/*----------------------------------------*/
+
+.fusion-column {
+    position: relative;
+    color: $white;
+    padding: 25px;
+    padding-bottom: 50px;
+    background: $dark-background-default;
+    .start-project-wrapper{
+        background: transparent;
+        color: $white;
+        h2{
+            color: $white;
+        }
+        .puces-rouges a{
+            color: $white;
+            
+        }
+        .puces-rouges a:hover{
+            color: $white;
+        }
+    }
+    .block-content {
+        position: relative;
+        z-index: 6;
+    }
+
+}
+
+.fusion-wrapper {
+   // padding: 45px 0 30px 0;
+    background-color: $heading-text-color;
+    // background-image: url(../img/home-left-image-mgt.jpeg);
+    // background-repeat: no-repeat;
+    // background-position: left top;
+    // background-size: contain;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        content: '';
+        width: 100%;
+        margin: auto;
+        background: rgba($heading-text-color, 0.65);
+
+    }
+}
+
+.two-col-list {
+
+    .puces-rouges {
+        list-style-type: none;
+        margin-bottom: 25px;
+
+        li {
+            // padding-left: 60px;
+            margin-bottom: 20px;
+            // background-image: url(../img/puces-rouges.png);
+            background-repeat: no-repeat;
+            background-position: 0 11px;
+        }
+    }
+}
+
+.two-col-list {
+
+    .btn-border {
+        color: $white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+
+.btn-outline {
+    border: 2px solid $white;
+    background-color: $dark-background-default;
+    color: $white;
+    display: inline-block;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 38px;
+    border-radius: 100px;
+
+    &:hover {
+        text-decoration: none;
+        background-color: $white;
+        color: $heading-text-color;
+        border-color: $white;
+    }
+}

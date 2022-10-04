@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Fjalla One';
+    src: url('fonts/FjallaOne-Regular.eot');
+    src: url('fonts/FjallaOne-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/FjallaOne-Regular.woff2') format('woff2'),
+         url('fonts/FjallaOne-Regular.woff') format('woff'),
+         url('fonts/FjallaOne-Regular.ttf')  format('truetype'),
+         url('fonts/FjallaOne-Regular.svg#Fjalla One') format('svg');
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-Regular.eot');
+    src: url('fonts/JetBrainsMono-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/JetBrainsMono-Regular.woff2') format('woff2'),
+         url('fonts/JetBrainsMono-Regular.woff') format('woff'),
+         url('fonts/JetBrainsMono-Regular.ttf')  format('truetype'),
+         url('fonts/JetBrainsMono-Regular.svg#JetBrains Mono') format('svg');
+}
+

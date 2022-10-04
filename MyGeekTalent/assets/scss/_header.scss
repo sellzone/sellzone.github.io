@@ -1,0 +1,206 @@
+/*----------------------------------------*/
+/* Header
+/*----------------------------------------*/
+
+
+.header-layout {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 14;
+    background-color: $dark-background-default;
+}
+
+.menu_nav {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    z-index: 12;
+    @include mq.mq($until:large){
+        min-height: 70px;
+    }
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-logo-img {
+    width: 108px;
+}
+
+.menu_nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .nav-menus-wrapper {
+        display: block;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+}
+
+
+.navbar_wrap {
+    display: flex;
+    .toggle-bt-icon{
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .toggle-menu{
+        display: none;
+        position: absolute;
+        background: $white;
+        @include mq.mq($until: large){
+            position: static;
+            // display: none;
+            // background: red;
+            // text-align: left;
+        }
+    }
+    .services-submenu{
+        padding: 0;
+        min-width: 220px;
+        border: 2px solid $white;
+        border-radius: 5px;
+        top: 80px;
+        padding: 0;
+        box-shadow: 0 3px 16px #ffffff3D;
+        @include mq.mq($until: large){
+            border-radius: 0;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            border: 10px solid transparent;
+            top: -20px;
+            left:  50px;
+            display: block;
+            z-index: 16;
+            // border-right-color: transparent;
+            border-bottom-color: $white;
+            @include mq.mq($until: large){
+                display: none;
+            }
+        }
+        ul{
+            padding: 0;
+        } 
+        li{
+            width: 100%;
+            &:hover{
+              background: $dark-background-default;
+            }
+        }
+        a{
+        
+          min-height: 40px;
+          color: $dark-background-default;
+          &:hover{
+            border-color: transparent; 
+            color: $white;
+          }
+        }
+    }
+    & ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        padding-left: 25px;
+
+        & li {
+            display: block;
+            position: relative;
+
+            & a {
+                font-size: 14px;
+                font-weight: normal;
+                padding: 25px 15px;
+                display: block;
+                line-height: 1;
+                position: relative;
+                z-index: 1;
+                color: $white;
+                border-bottom: 2px solid transparent;
+                &:hover {
+                    // text-decoration: underline;
+                    border-bottom-color: $white;
+                    @include mq.mq($until: desktop) {
+                        border-bottom-color:transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nav-auth {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    
+    ul {
+        display: flex;
+        padding-right: 0;
+        margin-bottom: 0;
+
+
+        li {
+
+            display: block;
+            position: relative;
+            border-radius: 5px;
+            // background: $white;
+            a {
+                // color: $dark-background-default;
+                color: $white;
+                padding: 25px  15px;
+                font-size: 14px;
+                line-height: 1;
+                display: block;
+                border-bottom: 2px solid transparent;
+                 
+                &:hover {
+                    // background-color: $background-hover;
+                    border-bottom-color: $white;
+                    @include mq.mq($until:tablet){
+                        border-bottom-color: transparent;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+
+.menu_toggle {
+
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    .mobilemenu-toggle {
+
+        font-size: 21px;
+        padding: 0 5px;
+        color: $white;
+    }
+
+}
+.header-site{
+    z-index: 16;
+}
+.banner-wrap{
+    min-width: 40%;
+}
+.site-header-logo{
+    padding-top: 10px;
+}

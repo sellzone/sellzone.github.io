@@ -1,0 +1,74 @@
+.modal-wrapper {
+    background-color: $red-line-color;
+    padding: 20px 25px;
+    // color: $dark-background-default;
+    h3 {
+        text-align: center;
+        font-weight: 600;
+    }
+    a{
+        color: $white;
+        &:hover{
+            color: $white;
+        }
+    }
+}
+
+.modal-btn-close {
+    color: $heading-text-color;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    z-index: 3;
+}
+
+.modal-header {
+    border: 0  !important;
+}
+
+
+.tp-contact-form {
+
+    .control-label {
+        display: block;
+    }
+}
+
+#modalrecompenses .modal-dialog,
+#modalnft .modal-dialog,
+#modalroyalties .modal-dialog ,
+#modalprevente .modal-dialog {
+    max-width: 80%;
+    width: 80%;
+}
+
+
+
+#modalcontact .modal-dialog {
+    max-width: 80%;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+
+    #modalrecompenses .modal-dialog,
+    #modalnft .modal-dialog,
+    #modalroyalties .modal-dialog,
+    #modalprevente .modal-dialog {
+        .modal-dialog {
+            max-width: 80%;
+            width: 80%;
+        }
+    }
+
+    #modalcontact {
+        .modal-dialog {
+            max-width: 1000px;
+            width: 80%;
+        }
+    }
+}

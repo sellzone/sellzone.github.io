@@ -1,0 +1,108 @@
+//light modal
+.modal-dialog{
+    max-width: 1000px;
+}
+.modal-content{
+    background: rgba(255,255,255,0.6);
+}
+.modal-wrapper{
+    min-height: 450px;
+}
+.modal-launch-wrapper {
+    
+    background: $red-line-color;
+    color: $white;
+    min-width: 80%;
+    text-align: left;
+}
+.notify-project-launch-wrap{
+    padding-top: 56px;
+    padding-bottom: 25px;
+    .notify-launch-bt{ 
+        display: block; 
+        margin: auto;
+        background: $dark-background-default;
+        max-width:300px; 
+        font-size: 14px;
+        width: 45%;
+       
+        border-radius: 50px;
+        min-height: 67px;
+        color: $white;
+        line-height: 3.5;
+        text-align: center;  
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0 3px 16px #0000002D;
+        opacity: 0.9;
+        border: 1px solid $dark-background-default;
+        font-family: 'JetBrains Mono';
+        @include mq.mq($until:tablet){
+            width: 100%;
+            min-width: 100%;
+            font-size: 12px;
+            line-height:8;
+        }
+        &::first-letter{
+            text-transform: uppercase;
+        }
+        &:hover{
+            opacity: 1;
+            background-color: $white;
+            color: $dark-background-default;
+        }
+    }
+}
+.notify-launch-project-modal{
+    
+    color: $dark-background-default;
+    label{
+        padding: 5px;
+        font-weight: bold;
+    }
+    .choices-list{
+        label{
+            font-weight: normal;
+        }
+    }
+    input{
+        margin-bottom: 10px; 
+    }
+    textarea{
+        min-height: 150px;
+    }
+    .launch-modal-bt{
+        text-align: center;
+        border-radius: 50px;
+        color: $white;
+        margin: 0 auto;
+        display: block;
+        max-width: 150px;
+        border: 2px solid $white;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-top: 20px;
+        text-transform: lowercase;
+        &::first-letter{
+            text-transform: uppercase;
+        }
+        &:hover{
+            background: $white;
+            color: $dark-background-default;
+        }
+    }
+    input[type=checkbox]{
+        margin-right: 10px;
+    }
+    .modal-dialog{
+        max-width: 1000px;
+        min-width: 50%;
+        font-family: 'JetBrains Mono';
+    }
+}
+.close-modal-bt{
+    color: $dark-background-default;
+}
+.modal{
+    color: $white;
+}
